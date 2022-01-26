@@ -16,5 +16,27 @@
 	<body>
 		<h1>Hello World! 👋🌍</h1>
 		<h1>I'm Thitithorn Kreingkraikumjorn</h1>
+        <h1 id="touch_text">🔽🔽🔽 Touch my heart 🔽🔽🔽</h1>
+        <img src="img/heart.png" id="myImg" width="400" height="400" onclick="changeImg()" value="Change">
 	<body>
 </html>
+
+<script type="text/javascript">
+    function changeImg() {
+        var image = document.getElementById('myImg');
+        if (image.src.match("img/heart.png")) {
+            image.src = "img/broken_heart.png";
+        }
+        else {
+            image.src = "img/heart.png";
+        }
+        var t = document.getElementById('touch_text');
+        if (image.src.match("img/heart.png")) {
+            t.textContent = "🔽🔽🔽 Touch my heart 🔽🔽🔽";
+        }
+        else {
+            t.textContent = "OUCH! That's hurt! Don't touch it too hard!";
+            
+        }
+    }
+    </script>
