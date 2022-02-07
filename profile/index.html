@@ -146,13 +146,13 @@
 
             <div><label>Part 2: Ask for a few more things: first name, last name, address, city, country. Use the proper input types for each field.</label></div>
             <br>
-            <form name="form_p1" target="/">
+            <form name="form_p2" target="/">
                 <table>
                     <tr>
                         <td><label>First name: </label></td>
-                        <td><input type="text" name="first_name"></td>
+                        <td><input type="text" name="first_name" required></td>
                         <td><label>Last name: </label></td>
-                        <td><input type="text" name="last_name"></td>
+                        <td><input type="text" name="last_name" required></td>
                     </tr>
                 </table>
                 <table>
@@ -161,15 +161,15 @@
                     </tr>
                     <tr>
                         <td><label>Detail: </label></td>
-                        <td><input type="text" name="address_detail"></td>
+                        <td><input type="text" name="address_detail" required></td>
                         <td><label>City: </label></td>
-                        <td><input type="text" name="city"></td>
+                        <td><input type="text" name="city" required></td>
                     </tr>
                     <tr>
                         <td><label>Country: </label></td>
-                        <td><input type="text" name="country"></td>
+                        <td><input type="text" name="country" required></td>
                         <td><label>Postcode: </label></td>
-                        <td><input type="number" name="postcode"></td>
+                        <td><input type="number" name="postcode" required></td>
                     </tr>
                 </table>
                 <input type="submit" name="send" value="Send">
