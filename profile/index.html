@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>INTRO-WEB-2 - HTML</title>
+        <!-- <link rel="stylesheet" href="https://unpkg.com/reset-css@5.0.1/reset.css" /> -->
     </head>
     <body>
         <div id="top_menu" name="top_menu">
@@ -132,12 +133,12 @@
             <form name="form_p1" target="/">
                 <table>
                     <tr>
-                        <td><label>User's name: </label></td>
-                        <td><input type="text" name="users_name"></td>
+                        <td><label for="users_name">User's name: </label></td>
+                        <td><input type="text" id="users_name" name="users_name"></td>
                     </tr>
                     <tr>
-                        <td><label>Address: </label></td>
-                        <td><input type="text" name="simple_address"></td>
+                        <td><label for="simple_address">Address: </label></td>
+                        <td><input type="text" id="simple_address" name="simple_address"></td>
                     </tr>
                 </table>
                 <input type="submit" name="simple_send" value="Send">
@@ -149,10 +150,10 @@
             <form name="form_p2" target="/">
                 <table>
                     <tr>
-                        <td><label>First name: </label></td>
-                        <td><input type="text" name="first_name" required></td>
-                        <td><label>Last name: </label></td>
-                        <td><input type="text" name="last_name" required></td>
+                        <td><label for="first_name">First name: </label></td>
+                        <td><input type="text" id="first_name" name="first_name" required></td>
+                        <td><label for="last_name">Last name: </label></td>
+                        <td><input type="text" id="last_name" name="last_name" required></td>
                     </tr>
                 </table>
                 <table>
@@ -160,16 +161,16 @@
                         <td><label>Address</label></td>
                     </tr>
                     <tr>
-                        <td><label>Detail: </label></td>
-                        <td><input type="text" name="address_detail" required></td>
-                        <td><label>City: </label></td>
-                        <td><input type="text" name="city" required></td>
+                        <td><label for="address_detail">Detail: </label></td>
+                        <td><input type="text" id="address_detail" name="address_detail" required></td>
+                        <td><label for="city">City: </label></td>
+                        <td><input type="text" id="city" name="city" required></td>
                     </tr>
                     <tr>
-                        <td><label>Country: </label></td>
-                        <td><input type="text" name="country" required></td>
-                        <td><label>Postcode: </label></td>
-                        <td><input type="number" name="postcode" required></td>
+                        <td><label for="country">Country: </label></td>
+                        <td><input type="text" id="country" name="country" required></td>
+                        <td><label for="postcode">Postcode: </label></td>
+                        <td><input type="number" id="postcode" name="postcode" required></td>
                     </tr>
                 </table>
                 <input type="submit" name="send" value="Send">
