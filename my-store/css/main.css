@@ -6,6 +6,19 @@ body {
 .section-title {
   font-size: 32px;
   font-weight: 600;
+  margin-bottom: 24px; /*Ex3*/
+}
+
+/*Ex1=======*/
+.container { 
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+/* Ex3*/
+.section {
+  margin-bottom: 64px;
 }
 
 /*---- Menu ----*/
@@ -15,22 +28,27 @@ body {
   background-image: url('../images/hero-background.jpg'); /* Photo by Nicholas Kampouris on Unsplash */
   background-size: cover;
   background-position: center center;
+  height: 720px; /*Ex2*/
 }
 
 .hero-title {
   font-size: 64px;
   font-weight: 600;
+  padding-top: 128px; /*Ex2*/
 }
 
 /*---- Collection Section ----*/
 .collection-item-title{
   font-size: 20px;
   font-weight: 600;
+  margin-bottom: 12px; /*Ex4*/
 }
 
 .collection-item {
   background-size: cover;
   background-position: 50% 82%;
+  padding: 24px; /*Ex4*/
+  border-radius: 8px; /*Ex4*/
 }
 
 .collection-item-one {
@@ -62,9 +80,26 @@ body {
 }
 
 /*---- Product Section ----*/
-.product-item-title {
+.product-item {
   font-size: 18px;
-  font-weight: 600;
+  margin-bottom: 16px;
+  width: calc(100% / 3); /*Ex5-1*/
+}
+
+.product-item-title {
+  font-weight: 600; /*Ex5-2*/
+  margin-bottom: 8px; /*Ex5-4*/
+}
+
+.product-item-image {
+  border-radius: 18px; /*Ex5-2*/
+  margin-bottom: 12px; /*Ex5-3*/
+  width: 100%;
+}
+
+/*Ex5-5*/
+.price {
+  margin-top: 24px;
 }
 
 /*---- About Section ----*/
