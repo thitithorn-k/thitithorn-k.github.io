@@ -1,5 +1,5 @@
 function changeImg() {
-    var image = document.getElementById('myImg');
+    var image = document.getElementById('heart-img');
     if (image.src.match("img/heart.png")) {
         image.src = "img/broken_heart.png";
     }
@@ -13,4 +13,12 @@ function changeImg() {
     else {
         t.textContent = "OUCH! That's hurt! Don't touch it too hard!";
     }
+}
+
+function openGithubPage(){
+    window.open('https://www.github.com/thitithorn-k/');
+}
+
+function gotoProfilePage(){
+    document.location = 'profile/';
 }

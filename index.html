@@ -1,15 +1,24 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">     
 	</head>
 	<body>
 		<h1>Hello World! 👋🌍</h1>
 		<h1>I'm Thitithorn Kreingkraikumjorn</h1>
         <h1 id="touch_text">🔽🔽🔽 Touch my heart 🔽🔽🔽</h1>
-        <img src="img/heart.png" id="myImg" width="400" height="400" onclick="changeImg()" value="Change">
-        <button onclick="document.location='profile/index.html'">Go to INTRO-WEB-2 - HTML assignment page</button>
-        <div><a href="profile/index.html"><h2>➡ Click Here to go to INTRO-WEB-2 - HTML assignment page ⬅</h2></a></div>
+        <div class="heart-div center">
+            <img src="img/heart.png" id="heart-img" class="heart-img" onclick="changeImg()" value="Change">
+        </div>
+        <div class="button-div center">
+            <button onclick="openGithubPage()" class="btn btn-80p">Open Github home page</button>
+        </div>
+        <div class="button-div center">
+            <button onclick="gotoProfilePage()" class="btn btn-80p" >Go to INTRO-WEB-2 - HTML assignment page</button>
+        </div>
     <body>
 </html>
 
-<script type="text/javascript" src="js/script.js">
+<script type="text/javascript" src="js/script.js"></script>
