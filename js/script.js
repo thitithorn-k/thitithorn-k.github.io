@@ -82,3 +82,7 @@ function openGithubPage(){
 function gotoProfilePage(){
     document.location = 'profile/';
 }
+
+function gotoMyStorePage(){
+    document.location = 'my-store/';
+}
