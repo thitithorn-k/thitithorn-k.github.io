@@ -23,6 +23,25 @@ body {
 
 /*---- Menu ----*/
 
+.menu-bar {
+  display: flex;
+  height: 72px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 20px;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 24px;
+}
+
 /*---- Hero Section ----*/
 .hero-section {
   background-image: url('../images/hero-background.jpg'); /* Photo by Nicholas Kampouris on Unsplash */
