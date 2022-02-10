@@ -86,3 +86,7 @@ function gotoProfilePage(){
 function gotoMyStorePage(){
     document.location = 'my-store/';
 }
+
+function gotoResumePage(){
+    document.location = 'resume/';
+}
