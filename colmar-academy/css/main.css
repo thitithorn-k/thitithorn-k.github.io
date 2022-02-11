@@ -1,0 +1,156 @@
+.main-div {
+    width: 100%;
+}
+
+.part {
+    padding: 32px 24px;
+}
+
+.banner-img {
+    width: 100%;
+    padding: 0px 24px;
+    align-content: center;
+}
+
+.banner-info-div {
+    display: flex;
+    align-items: center;
+}
+
+.banner-info {
+    padding: 32px 16px;
+}
+
+.information {
+    background-color: #f3f5f5;
+    margin-left: 0px;
+}
+
+.information-left {
+    width: 100%;
+    /* box-sizing: border-box; */
+}
+
+.information-left-img {
+    width: 100%;
+}
+
+.information-right {
+    width: 100%;
+}
+
+.information-right-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.information-right-item-img {
+    width: 35%;
+    box-sizing: border-box;
+    padding-right: 16px;
+}
+
+.information-right-item-info {
+    width: 65%;
+}
+
+.start-here-btn {
+    width: 100%;
+    background-color: #4a4a4a;
+    color: white;
+}
+
+.column-left {
+    width: 60%;
+    padding-right: 24px;
+}
+
+.column-right {
+    width: 40%;
+    padding: 0px;
+}
+
+#info-img {
+    display: block;
+}
+#info-img-mobile {
+    display: none;
+}
+
+.start-learning {
+    background-color: #eaebec;
+    padding: 32px 0px;
+}
+
+.card-container {
+    padding: 0px 40px;
+}
+
+.card {
+    width: calc(100%/3);
+    box-sizing: border-box;
+    margin: 0px 16px;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.thesis-exhibit {
+    background-color: #f3f5f5;
+}
+
+
+
+@media (max-width: 576px) {
+    .banner-img {
+        width: 100%;
+        padding: 0px 0px;
+        align-content: center;
+    }
+
+    .banner-info {
+        padding: 32px 16px;
+    }
+
+    .information-left {
+        display: none;
+    }
+
+    .information-right {
+        padding: 16px 16px;
+    }
+
+    .information-right-item {
+        display: contents;
+        padding-bottom: 16px;
+    }
+
+    .information-right-item-info {
+        width: 100%;
+    }
+
+    .column-left {
+        padding: 0px;
+        width: 100%;
+    }
+    
+    .column-right {
+        width: 100%;
+    }
+
+    .information-right-item-img {
+        width: 100%;
+        padding: 0px 0px;
+    }
+
+    #info-img {
+        display: none;
+    }
+    #info-img-mobile {
+        display: block;
+    }
+}
