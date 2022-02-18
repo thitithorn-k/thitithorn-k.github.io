@@ -13,3 +13,9 @@ function helloWorld(){
         alert(h1message + " คิดจะแซง ต้องแรงกว่านี้");
     }
 }
+
+function calAge(){
+    const user_birth_year = prompt('นายเกิดปี ค.ศ. อะไรนะ?');
+    const user_age = new Date().getFullYear() - Number(user_birth_year);
+    alert(`โอ้โห้ว ยินดีด้วย นายอยู่ในประเทศนี่มา ${user_age} ปีแล้วหรอเนี่ยยยย`)
+}
