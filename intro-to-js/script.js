@@ -19,3 +19,10 @@ function calAge(){
     const user_age = new Date().getFullYear() - Number(user_birth_year);
     alert(`โอ้โห้ว ยินดีด้วย นายอยู่ในประเทศนี่มา ${user_age} ปีแล้วหรอเนี่ยยยย`)
 }
+
+function loadProfile(){
+    const name = 'Thitithorn';
+    const province = 'Pathum thani';
+    document.querySelector('#my-name').innerHTML = name;
+    document.querySelector('#my-province').innerHTML = province;
+}

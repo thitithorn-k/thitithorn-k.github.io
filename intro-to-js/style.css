@@ -7,14 +7,14 @@ body {
     background: linear-gradient(120deg, rgba(34,92,243,1) 0%, rgba(255,161,77,1) 100%);
 }
 
-#name_h1 {
+.white_text {
     color: white;
 }
 
 .btn {
     width: 100px;
-    height: 50px;
-    border-radius: 15px;
+    height: 40px;
+    border-radius: 8px;
     border-width: 0px;
     color: white;
     background: rgba(255,161,77,1);

@@ -6,10 +6,16 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1 id="name_h1">My name is </h1>
+        <h1 id="name_h1" class="white_text">My name is </h1>
         <button id="ask_btn" class="btn" onclick="askMyName()">Ask My Name</button>
         <button id="hellow_btn" class="btn" onclick="helloWorld()">Hello World</button>
-        <button ud="calAge_btn" class="btn" onclick="calAge()">Calculate Age</button>
+        <button id="calAge_btn" class="btn" onclick="calAge()">Calculate Age</button>
+        
+        <hr/>
+        <p class="white_text"><strong>Name:</strong><p id="my-name" class="white_text"></p></p>
+        <p class="white_text"><strong>Province:</strong><p id="my-province" class="white_text"></p></p>
+        <button class="btn" onclick="loadProfile()">Load Profile</button>
+
         <script src="script.js"></script>
     </body>
 </html>
