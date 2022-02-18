@@ -17,7 +17,14 @@ function helloWorld(){
 function calAge(){
     const user_birth_year = prompt('นายเกิดปี ค.ศ. อะไรนะ?');
     const user_age = new Date().getFullYear() - Number(user_birth_year);
-    alert(`โอ้โห้ว ยินดีด้วย นายอยู่ในประเทศนี่มา ${user_age} ปีแล้วหรอเนี่ยยยย`)
+    if (user_age > 100) {
+        alert(`นายอายุ ${user_age} ปีแล้วงั้นหรอออ สนใจติดต่อกินเนสเวิลด์เรคคอร์ดมั้ย?`)
+    } else if (user_age <= 0){
+        alert(`นายอายุ ${user_age} ขวบ? ฉันว่านายใส่ปีเกิดผิดแล้วล่ะเพื่อนยาก`)
+    } else {
+        alert(`โอ้โห้ว ยินดีด้วย นายอยู่ในประเทศนี่มา ${user_age} ปีแล้วหรอเนี่ยยยย`)
+    }
+        
 }
 
 function loadProfile(){
