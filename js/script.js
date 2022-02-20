@@ -79,14 +79,6 @@ function openGithubPage(){
     window.open('https://www.github.com/thitithorn-k/');
 }
 
-function gotoProfilePage(){
-    document.location = 'profile/';
-}
-
-function gotoMyStorePage(){
-    document.location = 'my-store/';
-}
-
-function gotoResumePage(){
-    document.location = 'resume/';
+function gotoPage(target){
+    document.location = target;
 }
