@@ -1,0 +1,147 @@
+* {
+    font-family: 'Kanit', sans-serif;
+}
+
+:root {
+    --blue-color: rgba(34, 92, 243, 0.95);
+    --dark-blue-color: rgba(34,92,243, 0.95);
+    --orange-color: rgba(255, 161, 77, 0.95);
+    --dark-orange-color: rgba(229, 144, 69, 0.95);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+    background: rgba(34, 92, 243, 1);
+    background: linear-gradient(120deg, rgba(34, 92, 243, 1) 0%, rgba(255, 161, 77, 1) 100%);
+    background-attachment: fixed;
+}
+
+/* setting */
+.bg-blue {
+    background: var(--blue-color);
+}
+
+.bg-orange {
+    background: var(--orange-color);
+}
+
+.btn {
+    color: rgb(255, 255, 255);
+    background: var(--orange-color);
+    border: none;
+    border-radius: 50px;
+}
+
+.btn:hover {
+    background: var(--dark-orange-color);
+}
+
+.btn:active {
+    background: var(--orange-color);
+}
+
+.today {
+    background: var(--orange-color) !important;
+}
+
+#add-act-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 128px;
+}
+
+#add-act-btn-mobile {
+    display: none;
+    height: 48px;
+    width: 48px;
+    fill:var(--orange-color);
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.nav-icon {
+    fill: var(--blue-color);
+    width: 50px;
+    height: 50px;
+}
+
+/* nav-bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 64px;
+    color: var(--blue-color);
+    background-color: white;
+}
+
+.navbar-menu {
+    height: 100%;
+}
+
+.navbar-menu ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0px;
+    height: 100%;
+}
+
+.navbar-menu li {
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+    height: 100%;
+    background: white;
+}
+
+.navbar-menu li:hover {
+    color: white;
+    background: var(--blue-color);
+}
+
+.navbar-hamburger {
+    display: none;
+}
+
+/* container */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+@media screen and (max-width: 700px) {
+
+    /* .container {
+        height: 100%;
+    } */
+
+    /* nav-bar */
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-hamburger {
+        display: contents;
+    }
+    
+}
