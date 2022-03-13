@@ -81,15 +81,13 @@ class Field {
     }
 
     print() {
-        // console.clear();
-        // console.log(this.field.join('\n'), 'field');
         var logger = document.getElementById('field');
-        let message = this.field.join('\n');
-        if (typeof message == 'object') {
-            logger.innerHTML = (JSON && JSON.stringify ? JSON.stringify(message) : message) + '<br />';
-        } else {
-            logger.innerHTML = message + '<br />';
+        let message = '';
+        for(let row of this.field){
+            message += row.join('');
+            message += '\n';
         }
+        logger.innerHTML = message;
     }
 
     // getPlayerInput() {
